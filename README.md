@@ -13,3 +13,5 @@ Simply mention the bot, and he'll do the heavy lifting for you !
 ## CAN BE DEPLOYED TO HEROKU
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/edoriontlg/random-bot&env[TOKEN]=TOKEN)
+
+Do not forget to edit the TOKEN ENV VARIABLE after !
