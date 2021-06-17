@@ -1,0 +1,8 @@
+
+{
+    "name": "Random discord bot",
+    "description": "A discord bot that randomly chooses someone on a server",
+    "repository": "https://github.com/edoriontlg/random-bot",
+    "logo": "https://cdn.discordapp.com/avatars/855046442362994688/c9f0600b6ee6a2c57edb00f70e3cd767.webp?size=1024",
+    "keywords": ["node", "discord", "bot"]
+  }
