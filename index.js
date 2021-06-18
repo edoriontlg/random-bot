@@ -2,12 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 //When the bot is connected
-client.on('ready', () => {
+client.on('ready', (event) => {
     console.log(`Logged in as ${client.user.tag}`);
     console.log(`Bot ID is ${client.user.id}`)
 
     //Loads all users so our bot can find users at random
-    cacheUsers();
+    cacheUsers(event);
 });
 
 //Recache users whenever a guild is added/deleted, same for users.
@@ -51,6 +51,7 @@ function generateMention(author, user) {
         `${author} asked for help, and you, ${user} were chosen ! 🌟`,
         `${author} asked for me but I'm too lazy to help him, can you do it ${user} ?`,
         `*pssss ${user}, I think ${author} wants you. maybe someone else, idk but you're the first one I thought about.*`,
+        `if (${author}.wants(someone)) send(${user}, mention)`,
     ]
 
     var randomIndex = Math.floor(Math.random() * templates.length);
