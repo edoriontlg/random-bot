@@ -18,3 +18,7 @@ Do not forget to edit the TOKEN ENV VARIABLE after !
 
 ## Example
 ![image](https://user-images.githubusercontent.com/21106616/122551572-70d84d80-d035-11eb-9ed2-b3debcd9b44d.png)
+
+##TODO
+ - Reload only updated servers (currently reloads the entire user database in cache)
+ - Add phrases
