@@ -22,7 +22,7 @@ client.on('guildMemberUpdate', cacheUsers);
 client.on('message', msg => {
     if (msg.content.includes(`${client.user.id}`)) {
 
-        console.log('Log random mention detected');
+        console.log(`Log random mention triggered by ${msg.author}`);
 
         //Get a random user from the server's cache
         userToMention = msg.guild.members.cache.random().user;
@@ -35,6 +35,8 @@ client.on('message', msg => {
 
 
         msg.channel.send(generateMention(msg.author, userToMention));
+        
+        console.log(`Mentionned ${userToMention}`);
     }
 });
 
