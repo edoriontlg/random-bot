@@ -7,6 +7,7 @@ Simply mention the bot, and he'll do the heavy lifting for you !
 ## How to install
  - ```npm install```
  - ```node index.js```
+ - Add a TOKEN environment variable, and put your bot token here
 
  And you're good to go !
 
