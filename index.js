@@ -54,6 +54,7 @@ function generateMention(author, user) {
         `${author} asked for me but I'm too lazy to help him, can you do it ${user} ?`,
         `*pssss ${user}, I think ${author} wants you. maybe someone else, idk but you're the first one I thought about.*`,
         `if (${author}.wants(someone)) send(${user}, mention)`,
+        `${author} got a huge crush on you ${user}, sorry you had to find it this way...`,
     ]
 
     var randomIndex = Math.floor(Math.random() * templates.length);
